@@ -1,0 +1,11 @@
+{
+  "name":"Azure & KI Lernapp",
+  "short_name":"KI Lernen",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#f5f7fb",
+  "theme_color":"#0f172a",
+  "icons":[
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml"}
+  ]
+}

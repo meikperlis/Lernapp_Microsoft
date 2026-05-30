@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Azure & KI Lernapp</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Microsoft Zertifizierungspfad</p>
+        <h1>Azure & KI Lernapp</h1>
+      </div>
+      <button id="themeBtn" class="icon-btn" aria-label="Darstellung wechseln">◐</button>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <div>
+          <p class="eyebrow">Dein Pfad</p>
+          <h2>AZ-900 → Python Basics → AI-901</h2>
+          <p>Mobile Lernkarten, Prüfungs-Checklisten, Quizfragen und Fortschrittsspeicherung. Inhalte sind auf die offiziellen Microsoft Skills-Outlines ausgerichtet.</p>
+        </div>
+        <div class="progress-ring" aria-label="Fortschritt">
+          <span id="overallProgress">0%</span>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat card"><span id="doneCount">0</span><small>erledigt</small></div>
+        <div class="stat card"><span id="quizScore">0%</span><small>Quiz Ø</small></div>
+        <div class="stat card"><span id="streak">0</span><small>Lerntage</small></div>
+      </section>
+
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Suche: RBAC, Serverless, Foundry…" autocomplete="off" />
+      </div>
+
+      <section id="path" class="path"></section>
+      <section id="detail" class="detail card hidden"></section>
+      <section id="quiz" class="quiz card hidden"></section>
+    </main>
+
+    <nav class="tabbar" aria-label="Hauptnavigation">
+      <button class="tab active" data-view="learn">Lernen</button>
+      <button class="tab" data-view="quiz">Quiz</button>
+      <button class="tab" data-view="check">Check</button>
+      <button class="tab" data-view="sources">Quellen</button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
